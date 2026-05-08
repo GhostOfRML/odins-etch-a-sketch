@@ -4,6 +4,7 @@
 };
 body{
     color: #7d7d7d;
+    justify-content: center;
     display: flex ;
     flex-direction: column ;
     height: 100vh;
@@ -15,7 +16,6 @@ body{
     justify-content: center;
     align-items: center;
     top: 30px;
-    border: 1pg solid black;
     margin: 0 auto;
    
 
