@@ -1,7 +1,48 @@
-#container{
-    position: relative ;
+*{ 
+    margin :0;
+    padding: 0;
+};
+body{
+    color: #7d7d7d;
+    display: flex ;
+    flex-direction: column ;
+    height: 100vh;
+    width: 100%;
+
+};
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 30px;
     border: 1pg solid black;
     margin: 0 auto;
+   
 
+};
+.sketchContainer{
+    display: flex;
+    justify-content: center;
+    height: 960px;
+    width: 960px;
+    background-color: #991101;
+    padding-top: 50px;
+
+}
+.sketchScreen{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 600px;
+    width: 600px;
+    background-color: #bfbfbf;
+}
+.sketchScreen > div {
+    height: auto;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+}
+.sketchScreen > div > * {
+    flex: 1;
 }
