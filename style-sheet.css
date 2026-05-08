@@ -20,7 +20,7 @@ body{
    
 
 };
-.sketchContainer{
+.sketch-container{
     display: flex;
     justify-content: center;
     height: 960px;
@@ -29,7 +29,7 @@ body{
     padding-top: 50px;
 
 }
-.sketchScreen{
+.sketch-screen{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -37,12 +37,12 @@ body{
     width: 600px;
     background-color: #bfbfbf;
 }
-.sketchScreen > div {
+.sketch-screen > div {
     height: auto;
     flex: 1 0;
     display: flex;
     flex-direction: column;
 }
-.sketchScreen > div > * {
+.sketch-screen > div > * {
     flex: 1;
 }
