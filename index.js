@@ -10,9 +10,11 @@ function colorGen() {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
-   let rgb = (" + r + "," + g + "," + b + ");
+   let rgb ="rgb" +"("  + r + "," + g + "," + b  + ")";
+   console.log(rgb)
+   return rgb;
 };
-
+colorGen()
 function createGrid(size) {
     
     for (let i = 0 ;i <size ;i++ ){
@@ -22,22 +24,19 @@ function createGrid(size) {
         }
         else {
         let column =document.createElement("div");
-        
-        )
         column.classList.add("column")
         for (let j = 1;j <= size; j++ ){
             let row = document.createElement("div");
+            row.addEventListener("mouseover" , () =>{
+            row.style.backgroundColor= colorGen()
+            });
             row.classList.add("row")
             row.style.border= "2px solid black"
             column.appendChild(row);
-        }
-    screen.appendChild(column);}
+            };
+    screen.appendChild(column);
+        };
     
-    }
+    };
 };
-
-
-screen.addEventListener("mouseover",() => {
-    changeBackgroundColor();
-} )
 
